@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Unidades de Comprimento</h1>
+        <div class="converter">
+            <input type="number" id="inputValue" placeholder="Insira o valor" oninput="convert()">
+            <select id="inputUnit" onchange="convert()">
+                <option value="pm">Picômetro (pm)</option>
+                <option value="nm">Nanômetro (nm)</option>
+                <option value="um">Micrômetro (µm)</option>
+                <option value="mm">Milímetro (mm)</option>
+                <option value="m">Metro (m)</option>
+                <option value="km">Quilômetro (km)</option>
+            </select>
+        </div>
+        <div class="results">
+            <div class="result">
+                <label for="outputPm">Picômetro (pm):</label>
+                <input type="text" id="outputPm" readonly>
+            </div>
+            <div class="result">
+                <label for="outputNm">Nanômetro (nm):</label>
+                <input type="text" id="outputNm" readonly>
+            </div>
+            <div class="result">
+                <label for="outputUm">Micrômetro (µm):</label>
+                <input type="text" id="outputUm" readonly>
+            </div>
+            <div class="result">
+                <label for="outputMm">Milímetro (mm):</label>
+                <input type="text" id="outputMm" readonly>
+            </div>
+            <div class="result">
+                <label for="outputM">Metro (m):</label>
+                <input type="text" id="outputM" readonly>
+            </div>
+            <div class="result">
+                <label for="outputKm">Quilômetro (km):</label>
+                <input type="text" id="outputKm" readonly>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
